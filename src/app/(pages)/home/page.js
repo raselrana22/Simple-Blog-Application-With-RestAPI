@@ -6,10 +6,10 @@ export default async function Home() {
     console.log(posts);
 
     return (
-        <div>
+        <div className='mx-auto py-3 flex flex-auto'>
             {posts.map((post) => (
                 <div key={post.id}>
-                    {post.name}
+                    <p className='px-3'> {post.name}</p>
                 </div>
             ))}
         </div>
