@@ -2,9 +2,28 @@ import postDetails from "@/app/lib/apiRequest/postDetails";
 
 export default async function singleBlog({ params }) {
     const id = parseInt(params.id);
-    const post = await postDetails(id);
-    const postData = post.postDetails;
 
+    const fetchPostDetails = async () => {
+        try {
+            const post = await postDetails(id);
+            const postData = post.postDetails;
+
+            if (postData === null) {
+                return null;
+            }
+            return postData;
+
+        } catch (error) {
+            console.error('Error fetching post details:', error);
+            return null;
+        }
+    };
+
+    const postData = await fetchPostDetails();
+
+    if (postData == null) {
+        return <div>The details page could not be found</div>;
+    }
     return (
         <div>
             <div className='my-7 mx-7'>
@@ -20,5 +39,4 @@ export default async function singleBlog({ params }) {
             </div>
         </div >
     );
-
 }

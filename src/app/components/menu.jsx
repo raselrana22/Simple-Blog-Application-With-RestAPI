@@ -20,7 +20,7 @@ export default function Menu() {
               Blog
             </div>
           </Link>
-          <Link href={"/single-blog"}>
+          <Link href={"/single-blog/53"}>
             <div className='text-white hover:text-gray-300 cursor-pointer'>
               Single-Blog
             </div>

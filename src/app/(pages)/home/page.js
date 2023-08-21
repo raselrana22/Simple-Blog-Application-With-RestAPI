@@ -1,17 +1,11 @@
-import postCategories from "../../lib/apiRequest/postCategories";
+import Welcome from '../../components/welcome'
 
 export default async function Home() {
-    const posts = await postCategories();
-
     return (
-        <div className='mx-auto py-3 flex flex-auto'>
-            {posts.map((post) => {
-                return (
-                    <div key={post.id}>
-                        <p className='px-3'> {post.name}</p>
-                    </div>
-                );
-            })}
+        <div >
+            <div className='min-h-screen bg-gray-100'>
+                <Welcome />
+            </div>
         </div>
     );
 }
