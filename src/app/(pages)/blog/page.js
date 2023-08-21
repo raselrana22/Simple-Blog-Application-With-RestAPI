@@ -3,8 +3,7 @@
 import React, { useState, useEffect } from "react";
 import postCategories from "../../lib/apiRequest/postCategories";
 import postList from "../../lib/apiRequest/postList";
-
-import Image from 'next/image'
+import Link from "next/link";
 
 export default function Blog() {
     const [postCat, setPostCat] = useState([]);
@@ -57,9 +56,11 @@ export default function Blog() {
                         {posts.map((post) => (
                             <div key={post.id}
                                 className='shadow-lg hover:scale-95 transition delay-100'>
-                                <img src={post.img} width={350} />
-                                <p className='font-bold py-2'>{post.title}</p>
-                                <p className='mt-1'>{post.short}</p>
+                                <Link href={`/single-blog/${post.id}`}>
+                                    <img src={post.img} width={350} />
+                                    <p className='font-bold py-2'>{post.title}</p>
+                                    <p className='mt-1'>{post.short}</p>
+                                </Link>
                             </div>
                         ))}
                     </div>
