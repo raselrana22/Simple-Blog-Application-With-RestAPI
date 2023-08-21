@@ -1,5 +1,6 @@
-export default async function postList() {
-    const res = await fetch('https://basic-blog.teamrabbil.com/api/post-list/2',
+export default async function postList(id) {
+
+    const res = await fetch(`https://basic-blog.teamrabbil.com/api/post-list/${id}`,
         {
             method: 'GET',
         })

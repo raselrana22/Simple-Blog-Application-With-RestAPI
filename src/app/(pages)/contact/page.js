@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react';
-import validateForm from '@/app/lib/utils/validateForm'
+import validateForm from '../../lib/utils/validateForm';
 
 export default function Contact() {
     const [formData, setFormData] = useState({

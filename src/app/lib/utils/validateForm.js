@@ -1,6 +1,6 @@
 // formValidate.js
 
-export function validateForm(formData) {
+export default function validateForm(formData) {
     const errors = {};
 
     if (!formData.name) {
