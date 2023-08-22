@@ -39,7 +39,7 @@ export default function Contact() {
 
     return (
         <div>
-            <div className='min-h-screen bg-gray-100'>
+            <div className='min-h-screen bg-slate-200'>
                 <div className='container mx-auto p-4 max-w-xl'>
                     <div className='bg-white rounded-lg shadow-md p-6'>
                         <h1 className='text-3xl font-semibold mb-4'>Contact Us</h1>

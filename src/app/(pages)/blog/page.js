@@ -36,7 +36,7 @@ export default function Blog() {
 
     return (
         <div>
-            <div className='flex'>
+            <div className='bg-slate-200 flex'>
                 <div className='mx-auto py-4 flex'>
                     {postCat.map((post) => (
                         <div

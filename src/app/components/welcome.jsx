@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Welcome() {
   return (
-    <section className='bg-blue-200 p-2'>
+    <section className='p-2 bg-slate-200'>
       <div className='container mx-3'>
         <div className='flex justify-center items-center'>
           <h1 className='text-3xl font-bold mb-4'>Welcome to Our Blog</h1>

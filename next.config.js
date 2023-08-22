@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 
+
 const nextConfig = {
 
     //  distDir: 'build',  //specify a name to use for a custom build directory
@@ -16,6 +17,7 @@ const nextConfig = {
             }
         ]
     },
+    
 }
 
 module.exports = nextConfig
