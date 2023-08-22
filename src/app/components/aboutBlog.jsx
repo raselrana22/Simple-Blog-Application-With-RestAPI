@@ -67,6 +67,11 @@ export default function AbutBlog() {
           </p>
         </div>
       </section>
+      <div className='flex justify-center items-center mt-4'>
+        <div className='max-w-full'>
+          <p className='text-3xl font-bold py-12'>Thank you</p>
+        </div>
+      </div>
     </div>
   );
 }
