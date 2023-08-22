@@ -20,11 +20,11 @@ export default function Menu() {
               Blog
             </div>
           </Link>
-          <Link href={"/single-blog/53"}>
+          {/* <Link href={"/single-blog/53"}>
             <div className='text-white hover:text-gray-300 cursor-pointer'>
               Single-Blog
             </div>
-          </Link>
+          </Link> */}
           <Link href={"/contact"}>
             <div className='text-white hover:text-gray-300 cursor-pointer'>
               Contact
