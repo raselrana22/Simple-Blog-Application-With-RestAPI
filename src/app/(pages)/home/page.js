@@ -25,7 +25,7 @@ export default function Home() {
                 <div className='flex justify-center items-center mt-6'>
                     <h1 className='text-3xl font-bold'>Latest Blogs</h1>
                 </div>
-                <div className='mt-2 border-solid border-2 border-t-red-600'></div>
+                <div className='mt-2 border-solid border-2 border-t-slate-600'></div>
                 <NewestPosts />
             </div>
         </div>
