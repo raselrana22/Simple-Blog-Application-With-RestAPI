@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Welcome from '../../components/welcome'
 import NewestPosts from '@/app/components/newestPosts';
 
+
 export default function Home() {
 
 
